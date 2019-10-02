@@ -1,0 +1,117 @@
+@charset "utf-8";
+body{
+	padding: 0;
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+#site-intro{
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+#img{
+	border: 2px solid #E2E9ED;
+	box-shadow: 0px 0px 10px #ddd;
+}
+#app-name{
+	font-family: Important;
+	margin-top: 3px;
+	font-size: 65px;
+	color: #FF7466;
+	padding: 0;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+#slide-bar{
+	width: 320px;
+	height: 100vh;
+	background-color: #FF7466;
+	position: absolute;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+}
+#para1{
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 7px;
+	margin-bottom: 20px;
+}
+#fname{
+	width: 276px;
+	height: 40px;
+	font-family: calibri;
+	margin-left: 22px;
+	margin-bottom: 20px;
+}
+#pwd{
+	width: 276px;
+	height: 40px;
+	font-family: calibri;
+	margin-left: 22px;
+}
+#sub1{
+	width: 70px;
+	height: 40px;
+	margin-left: 230px;
+	margin-top: 20px;
+	border-style: none;
+	background-color: white;
+
+}
+#fname,#pwd{
+	font-family: fontAwesome;
+	font-size: 17px;
+	color: grey;
+}
+#para2{
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#uname{
+	width: 276px;
+	height: 40px;
+}
+#password{
+	width: 276px;
+	height: 40px;
+}
+#email{
+	width: 276px;
+	height: 40px;
+}
+#mobile{
+	width: 276px;
+	height: 40px;
+}
+#uname,#password,#email,#mobile{
+	font-family: fontAwesome;
+	font-size: 17px;
+	color: grey;
+	margin-bottom: 20px;
+	margin-left: 22px;
+}
+input[type='email'],input[type='text'],input[type='number'],input[type='password']{
+	padding: 5px;
+	box-sizing: border-box;
+}
+#sub2{
+	width: 70px;
+	height: 40px;
+	margin-left: 230px;
+	border-style: none;
+	background-color: white;
+}
+

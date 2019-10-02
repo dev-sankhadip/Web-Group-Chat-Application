@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Happy Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/chat.css"/>
+  </head>
+  <body>
+    <div id="user_cont">
+    </div>
+    <div id="mario-chat">
+         <div id="chat-window">
+              <div id="output"></div>
+              <div id="feedback"></div>
+         </div>
+        <input type="text" placeholder="Write your name here" id="handle">
+        <button id="set">Set your name</button>
+        <input type="text" placeholder="Message" id="message">
+        <button id="send" disabled="disabled" style="cursor:not-allowed;">Send</button>
+        <input type="file" accept="image/*" id="image-send" onchange="send_image()">
+        <input type="file" accept="video/*" id="input" onchange="send_video()">
+    </div>
+    <span id="log">Log Out</span><span onclick="logout()"><i class="fa fa-sign-out" aria-hidden="true" id="logout"></i></span>
+    <script src="/chat.js"></script>
+  </body>
+</html>

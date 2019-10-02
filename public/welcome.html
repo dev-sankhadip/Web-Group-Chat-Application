@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>welcome</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #header{
+                width: 100%;
+                height:70px;
+                background-color:brown;
+                box-sizing:border-box;
+                padding-top: 3px;
+            }
+            p{
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 40px;
+                text-align: center;
+            }
+            #section{
+                width: 100%;
+                height: 500px;
+                background-color: darkgray;
+            }
+            h1{
+                color: gold;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 100px;
+            }
+            button{
+                width: 100px;
+                height: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                background-color:green;
+                float: right;
+                margin-top: 200px;
+                margin-right: 30px;
+                border-style: none;
+                border-radius: 5px; 
+            }
+            #footer{
+                width: 100%;
+                height: 65px;
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <p>Happy Chat</p>
+        </div>
+        <div id="section">
+            <h1>WELCOME</h1>
+            <button id="btm">Start room</button>
+        </div>
+        <div id="footer">
+
+        </div>
+        <script>
+            var btm=document.getElementById("btm");
+            btm.onclick=function()
+            {
+                location.replace('chat.html');
+            }
+        </script>
+    </body>
+</html>

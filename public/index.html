@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Chat</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<noscript>
+		<h1>please enable javascript</h1>
+		<style>
+			body{
+				background-color: black;
+			}
+			h1{
+				font-size: 100px;
+				text-align: center;
+				color: red;
+				font-family: sans-serif;
+			}
+			#webpage{
+				display: none;
+			}
+		</style>
+	</noscript>
+</head>
+<body>
+	<div id="webpage">
+		<div id="site-intro">
+			<center>
+				<img src="image/bg.jfif" width="120px" id="img">
+				<h1 id="app-name">Happy Chat</h1>
+				<i class="fa fa-comments-o" aria-hidden="true" style="font-size: 55px; margin-left: 17px;" onclick="slidebar()"></i>
+			</center>
+		</div>
+		<div id="slide-bar">
+			<i class="fa fa-window-close" aria-hidden="true" style="margin-left: 285px; margin-top: 5px;font-size: 27px;" onclick="del()"></i>
+			<p id="para1">Login user!</p>
+			<form id="form" autocomplete="off" onsubmit="return login()">
+				<input type="text" name="text" placeholder="&#xf2bd; username" id="fname" required="required">
+				<input type="password" name="password" placeholder="&#xf023; Password" id="pwd" required="required"><br>
+				<input type="submit" value="Login" id="sub1"">
+			</form>
+			<p id="para2">Sign Up user!</p>
+			<form id="form1" autocomplete="off" onsubmit="return signup()">
+				<input type="text" name="fname" placeholder="&#xf2bd; username" id="uname" required="required" autocomplete="off">
+				<input type="email" name="email" placeholder="&#xf0e0; Email id" id="email" required="required" autocomplete="off" onchange="user_existed()" class="animated">
+				<input type="password" name="password" placeholder="&#xf023; Password" id="password" required="required">
+				<input type="number" name="phnumber" placeholder="&#xf10b; Mobile no" id="mobile" required="required" class="animated" autocomplete="off">
+				<!--<span id="signup_sucess" style="font-weight: bold;font-family: sans-serif;display: block;color: white;">sign up sucess</span>-->
+				<input type="submit" name="submit" value="signup" id="sub2">
+			</form>
+		</div>
+		<center>
+			<div>
+				<span style="font-family: Engravers MT;font-weight: bolder;display: block; font-size: 30px;color: #e05e53;" id="span"></span>
+			</div>
+		</center>
+	</div>
+	<script src="compatible.js"></script>
+	<script src="signup_login.js"></script>
+</body>
+</html>
